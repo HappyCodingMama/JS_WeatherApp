@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+  </head>
+
+  <body>
+    <div class="weather-app">
+      <div class="panel">
+        <form id="locationInput">
+          <input type="text" class="search" placeholder="Search Location" />
+          <button type="submit" class="submit">
+            <i class="fa-solid fa-magnifying-glass icon"></i>
+          </button>
+        </form>
+
+        <ul class="cities">
+          <li class="city">New York</li>
+          <li class="city">Hawaii</li>
+          <li class="city">Seoul</li>
+          <li class="city">Toronto</li>
+          <li class="city">Vancouver</li>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="header">
+          <h3 class="title">the Weather</h3>
+          <span class="time">06:09</span>
+          <div class="city-time">
+            <span class="date">Monday Sep 19</span>
+          </div>
+        </div>
+
+        <div class="title-details">
+          <div class="weather-brief">
+            <div class="weather">
+              <!-- <img
+                src="./icons/day/113.png"
+                alt="icon"
+                class="icon"
+                widht="30"
+                height="30"
+              /> -->
+
+              <h1 class="temp">15 <small>&#176;</small></h1>
+
+              <h1 class="name">Vancouver</h1>
+              <span class="condition">Rainy</span>
+            </div>
+            <ul class="details">
+              <li>
+                <span>Feels like <span class="feelslike">15&#176;</span></span>
+              </li>
+
+              <li>
+                <span><i class="fa-solid fa-cloud"></i></span>
+                <span class="cloud">89%</span>
+              </li>
+              <li>
+                <span><i class="fa-solid fa-droplet"></i></span>
+                <span class="humidity">54%</span>
+              </li>
+              <li>
+                <span><i class="fa-solid fa-wind"></i></span>
+                <span class="wind">8km/h</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
