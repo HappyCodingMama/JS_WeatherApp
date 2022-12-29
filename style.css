@@ -174,7 +174,7 @@ body {
 }
 
 .panel ul {
-  padding: 0 0 1em 0;
+  padding: 0 3rem;
 }
 
 .panel ul li {
@@ -219,6 +219,35 @@ body {
   .title-details {
     margin-top: 4rem;
     margin-bottom: 0rem;
+  }
+
+  .details {
+    flex-direction: column;
+  }
+
+  .cities {
+    padding: 0 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .city {
+    display: flex;
+    justify-content: center;
+  }
+
+  .search {
+    width: 67%;
+  }
+
+  .submit {
+    position: absolute;
+    right: 100px;
+  }
+
+  .search {
+    position: relative;
   }
 }
 
